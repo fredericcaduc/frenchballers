@@ -359,13 +359,13 @@
                     <a href="#">Voir →</a>
                 </div>
                 <div class="feature-card card-hover" onclick="showPage('wemby')">
-                    <div class="icon">👀</div>
+                    <div class="icon">🌟</div>
                     <h3>Wemby Watch</h3>
                     <p>Victor</p>
                     <a href="#">Voir →</a>
                 </div>
                 <div class="feature-card card-hover" onclick="showPage('stats')">
-                    <div class="icon">📈</div>
+                    <div class="icon">📊</div>
                     <h3>Stats</h3>
                     <p>Par joueur</p>
                     <a href="#">Voir →</a>
@@ -374,7 +374,7 @@
 
             <!-- Performances Section on Home -->
             <div style="margin-top: 20px;">
-                <h2 style="font-size: 1.1rem; font-weight: bold; color: #111827; margin-bottom: 12px; padding: 0 12px;">📊 Performances de la veille</h2>
+                <h2 style="font-size: 1.1rem; font-weight: bold; color: #111827; margin-bottom: 12px; padding: 0 12px;">🔥 Performances de la veille</h2>
                 <div id="home-performances-list">
                     <!-- Perf 1 -->
                     <div class="player-card excellent">
@@ -443,8 +443,8 @@
     <!-- PERFORMANCES PAGE -->
     <div id="performances" class="page">
         <div class="hero-header">
-            <h1>📊 Performances</h1>
-            <p>Meilleur au pire</p>
+            <h1>🔥 Performances</h1>
+            <p>Meilleur au piré</p>
         </div>
         <div class="container" style="padding-bottom: 20px;">
             <div id="performances-list">
@@ -552,7 +552,7 @@
                 <div class="player-card average">
                     <div class="player-info">
                         <div class="player-info-left">
-                            <h3>Nolan Traoré</h3>
+                            <h3>Nolan Traouré</h3>
                             <p>Brooklyn Nets</p>
                         </div>
                         <div class="player-info-right">
@@ -632,7 +632,7 @@
                 <div class="ranking-item card-hover">
                     <div class="ranking-number" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); color: #d97706;">5</div>
                     <div style="flex: 1; min-width: 0;">
-                        <h3 style="font-weight: bold; color: #111827; font-size: 0.85rem;">Zaccharie Risacher</h3>
+                        <h3 style="font-weight: bold; color: #111827; font-size: 0.85rem;">Zacharie Risacher</h3>
                         <p style="color: #6b7280; font-size: 0.7rem;">Dallas Mavericks</p>
                     </div>
                     <div style="text-align: right; flex-shrink: 0;">
@@ -707,7 +707,7 @@
                 </div>
 
                 <div class="ranking-item card-hover">
-                    <div class="ranking-number" style="background: #fef08a; color: #ca8a04;">12</div>
+                    <div class="ranking-number" style="background: #fef0ba; color: #ca8a04;">12</div>
                     <div style="flex: 1; min-width: 0;">
                         <h3 style="font-weight: bold; color: #111827; font-size: 0.85rem;">Noa Essengue</h3>
                         <p style="color: #6b7280; font-size: 0.7rem;">Chicago Bulls</p>
@@ -775,7 +775,7 @@
                 <div class="ranking-item card-hover">
                     <div class="ranking-number" style="background: #faf5ff; color: #6b21a8;">18</div>
                     <div style="flex: 1; min-width: 0;">
-                        <h3 style="font-weight: bold; color: #111827; font-size: 0.85rem;">Nolan Traoré</h3>
+                        <h3 style="font-weight: bold; color: #111827; font-size: 0.85rem;">Nolan Traouré</h3>
                         <p style="color: #6b7280; font-size: 0.7rem;">Brooklyn Nets</p>
                     </div>
                     <div style="text-align: right; flex-shrink: 0;">
@@ -789,7 +789,7 @@
     <!-- WEMBY WATCH PAGE -->
     <div id="wemby" class="page">
         <div class="hero-header">
-            <h1>👀 Wemby Watch</h1>
+            <h1>🌟 Wemby Watch</h1>
             <p>Victor Wembanyama</p>
         </div>
         <div class="container" style="padding-bottom: 20px;">
@@ -820,7 +820,7 @@
             </div>
 
             <div style="background: #eff6ff; border-left: 3px solid #667eea; border-radius: 8px; padding: 14px;">
-                <h3 style="font-weight: bold; color: #111827; font-size: 0.9rem; margin-bottom: 12px;">📈 Saison</h3>
+                <h3 style="font-weight: bold; color: #111827; font-size: 0.9rem; margin-bottom: 12px;">🔥 Saison</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 12px;">
                     <div>
                         <p style="color: #6b7280; font-size: 0.7rem; margin-bottom: 2px;">PPG</p>
@@ -839,134 +839,78 @@
         </div>
     </div>
 
-    <!-- STATS DÉTAILLÉES PAGE -->
+    <!-- STATS DETAILS PAGE -->
     <div id="stats" class="page">
         <div class="hero-header">
-            <h1>📈 Stats</h1>
+            <h1>📊 Stats</h1>
             <p>Par joueur</p>
         </div>
         <div class="container" style="padding-bottom: 20px;">
             <div style="margin-bottom: 14px;">
                 <label for="player-select" style="display: block; font-weight: 600; margin-bottom: 6px; color: #111827; font-size: 0.8rem;">Joueur :</label>
                 <select id="player-select" onchange="updatePlayerStats()">
-                    <option value="">-- Sélectionne --</option>
-                    <option value="wembanyama">Victor Wembanyama - Spurs</option>
-                    <option value="sarr">Alexandre Sarr - Wizards</option>
-                    <option value="coulibaly">Bilal Coulibaly - Wizards</option>
-                    <option value="risacher">Zaccharie Risacher - Mavericks</option>
-                    <option value="gobert">Rudy Gobert - Timberwolves</option>
-                    <option value="beringer">Joan Beringer - Timberwolves</option>
-                    <option value="salaun">Tidjane Salaün - Hornets</option>
-                    <option value="diabate">Moussa Diabaté - Hornets</option>
-                    <option value="traore">Nolan Traoré - Nets</option>
-                    <option value="essengue">Noa Essengue - Bulls</option>
-                    <option value="batum">Nicolas Batum - Clippers</option>
-                    <option value="diawara">Mohamed Diawara - Knicks</option>
-                    <option value="dadiet">Pacôme Dadiet - Knicks</option>
-                    <option value="dieng">Ousmane Dieng - Bucks</option>
-                    <option value="rupert">Rayan Rupert - 76ers</option>
-                    <option value="cissoko">Sidy Cissoko - Trail Blazers</option>
-                    <option value="raynaud">Maxime Raynaud - Kings</option>
-                    <option value="penda">Noah Penda - Magic</option>
+                    <option value="wembanyama">Victor Wembanyama</option>
+                    <option value="gobert">Rudy Gobert</option>
+                    <option value="batum">Nicolas Batum</option>
+                    <option value="sarr">Alexandre Sarr</option>
+                    <option value="risacher">Zacharie Risacher</option>
                 </select>
             </div>
 
-            <div id="player-stats-container" style="display: none;">
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 18px; border-radius: 8px; margin-bottom: 14px;">
-                    <h2 id="player-name" style="font-size: 1.1rem; font-weight: bold; margin-bottom: 2px;"></h2>
-                    <p id="player-team" style="font-size: 0.75rem; opacity: 0.9;"></p>
-                </div>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 10px; margin-bottom: 14px;">
-                    <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                        <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">PPG</p>
-                        <p id="stat-ppg" style="font-size: 1.2rem; font-weight: bold; color: #111827;">-</p>
+            <div id="player-stats-detail" style="background: white; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 0.9rem; font-weight: bold; color: #111827; margin-bottom: 12px;">Victor Wembanyama - San Antonio Spurs</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 8px;">
+                    <div style="background: #f3f4f6; padding: 10px; border-radius: 6px; text-align: center;">
+                        <p style="font-size: 0.65rem; color: #6b7280; font-weight: 600; margin-bottom: 4px;">PPG</p>
+                        <p style="font-size: 1.1rem; font-weight: bold; color: #111827;">22.4</p>
                     </div>
-                    <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                        <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">RPG</p>
-                        <p id="stat-rpg" style="font-size: 1.2rem; font-weight: bold; color: #111827;">-</p>
+                    <div style="background: #f3f4f6; padding: 10px; border-radius: 6px; text-align: center;">
+                        <p style="font-size: 0.65rem; color: #6b7280; font-weight: 600; margin-bottom: 4px;">RPG</p>
+                        <p style="font-size: 1.1rem; font-weight: bold; color: #111827;">10.7</p>
                     </div>
-                    <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                        <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">APG</p>
-                        <p id="stat-apg" style="font-size: 1.2rem; font-weight: bold; color: #111827;">-</p>
+                    <div style="background: #f3f4f6; padding: 10px; border-radius: 6px; text-align: center;">
+                        <p style="font-size: 0.65rem; color: #6b7280; font-weight: 600; margin-bottom: 4px;">APG</p>
+                        <p style="font-size: 1.1rem; font-weight: bold; color: #111827;">3.2</p>
                     </div>
-                    <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                        <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">SPG</p>
-                        <p id="stat-spg" style="font-size: 1.2rem; font-weight: bold; color: #111827;">-</p>
+                    <div style="background: #f3f4f6; padding: 10px; border-radius: 6px; text-align: center;">
+                        <p style="font-size: 0.65rem; color: #6b7280; font-weight: 600; margin-bottom: 4px;">SPG</p>
+                        <p style="font-size: 1.1rem; font-weight: bold; color: #111827;">1.8</p>
                     </div>
-                    <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                        <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">BPG</p>
-                        <p id="stat-bpg" style="font-size: 1.2rem; font-weight: bold; color: #111827;">-</p>
+                    <div style="background: #f3f4f6; padding: 10px; border-radius: 6px; text-align: center;">
+                        <p style="font-size: 0.65rem; color: #6b7280; font-weight: 600; margin-bottom: 4px;">BPG</p>
+                        <p style="font-size: 1.1rem; font-weight: bold; color: #111827;">3.4</p>
                     </div>
-                    <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                        <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">FG%</p>
-                        <p id="stat-fg" style="font-size: 1.2rem; font-weight: bold; color: #111827;">-</p>
-                    </div>
-                </div>
-
-                <div style="background: white; border-radius: 8px; padding: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                    <p id="player-info" style="color: #6b7280; font-size: 0.85rem;"></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer style="background: #1f2937; color: white; padding: 14px; text-align: center; margin-top: 30px; font-size: 0.8rem;">
-        <p style="margin-bottom: 2px;">🏀 NBA France Stats</p>
-        <p style="color: #9ca3af;">18 joueurs français</p>
-    </footer>
-
     <script>
-        const players = {
-            wembanyama: { name: "Victor Wembanyama", team: "San Antonio Spurs", ppg: 22.4, rpg: 10.7, apg: 3.2, spg: 1.8, bpg: 3.1, fg: 46.2, info: "Rookie 2023 - Étoile montante" },
-            sarr: { name: "Alexandre Sarr", team: "Washington Wizards", ppg: 16.8, rpg: 8.2, apg: 1.9, spg: 1.2, bpg: 1.5, fg: 44.1, info: "Jeune talent français" },
-            coulibaly: { name: "Bilal Coulibaly", team: "Washington Wizards", ppg: 9.3, rpg: 3.1, apg: 1.5, spg: 0.9, bpg: 0.4, fg: 41.2, info: "Défenseur prometteur" },
-            risacher: { name: "Zaccharie Risacher", team: "Dallas Mavericks", ppg: 12.5, rpg: 4.2, apg: 1.1, spg: 0.8, bpg: 0.5, fg: 39.8, info: "Ailier français" },
-            gobert: { name: "Rudy Gobert", team: "Minnesota Timberwolves", ppg: 14.1, rpg: 11.2, apg: 2.3, spg: 0.9, bpg: 2.1, fg: 64.5, info: "Défenseur de classe mondiale" },
-            beringer: { name: "Joan Beringer", team: "Minnesota Timberwolves", ppg: 7.8, rpg: 2.9, apg: 2.1, spg: 0.6, bpg: 0.2, fg: 38.2, info: "Arrière en apprentissage" },
-            salaun: { name: "Tidjane Salaün", team: "Charlotte Hornets", ppg: 10.2, rpg: 5.1, apg: 1.3, spg: 0.7, bpg: 0.8, fg: 40.5, info: "Ailier fort" },
-            diabate: { name: "Moussa Diabaté", team: "Charlotte Hornets", ppg: 8.4, rpg: 4.7, apg: 1.2, spg: 0.5, bpg: 1.1, fg: 52.3, info: "Intérieur français" },
-            traore: { name: "Nolan Traoré", team: "Brooklyn Nets", ppg: 4.1, rpg: 1.8, apg: 0.9, spg: 0.3, bpg: 0.1, fg: 35.2, info: "Début de carrière NBA" },
-            essengue: { name: "Noa Essengue", team: "Chicago Bulls", ppg: 5.2, rpg: 2.3, apg: 1.5, spg: 0.4, bpg: 0.3, fg: 36.8, info: "Jeune talent français" },
-            batum: { name: "Nicolas Batum", team: "LA Clippers", ppg: 11.3, rpg: 5.8, apg: 3.2, spg: 1.1, bpg: 0.8, fg: 42.1, info: "Vétéran expérimenté" },
-            diawara: { name: "Mohamed Diawara", team: "New York Knicks", ppg: 6.7, rpg: 3.2, apg: 1.8, spg: 0.6, bpg: 0.4, fg: 39.5, info: "Arrière français" },
-            dadiet: { name: "Pacôme Dadiet", team: "New York Knicks", ppg: 8.9, rpg: 4.1, apg: 1.5, spg: 0.8, bpg: 0.6, fg: 41.2, info: "Ailier en progression" },
-            dieng: { name: "Ousmane Dieng", team: "Milwaukee Bucks", ppg: 7.3, rpg: 3.5, apg: 1.2, spg: 0.9, bpg: 0.7, fg: 40.8, info: "Ailier-fort polyvalent" },
-            rupert: { name: "Rayan Rupert", team: "Philadelphia 76ers", ppg: 9.1, rpg: 4.2, apg: 1.8, spg: 1.3, bpg: 0.9, fg: 43.1, info: "Défenseur français" },
-            cissoko: { name: "Sidy Cissoko", team: "Portland Trail Blazers", ppg: 6.8, rpg: 2.1, apg: 1.1, spg: 0.5, bpg: 0.3, fg: 38.9, info: "Arrière en apprentissage" },
-            raynaud: { name: "Maxime Raynaud", team: "Sacramento Kings", ppg: 5.4, rpg: 3.8, apg: 0.8, spg: 0.4, bpg: 0.6, fg: 50.2, info: "Intérieur français" },
-            penda: { name: "Noah Penda", team: "Orlando Magic", ppg: 4.2, rpg: 2.1, apg: 0.7, spg: 0.3, bpg: 0.2, fg: 37.5, info: "Début de carrière" }
-        };
-
         function showPage(pageId) {
-            document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Show selected page
             document.getElementById(pageId).classList.add('active');
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+
+            // Update nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
             event.target.classList.add('active');
-            window.scrollTo(0, 0);
         }
 
-        function toggleRankingPeriod(period) { console.log('Period:', period); }
+        function toggleRankingPeriod(period) {
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => btn.classList.remove('btn-primary'));
+            buttons.forEach(btn => btn.classList.add('btn-secondary'));
+            event.target.classList.remove('btn-secondary');
+            event.target.classList.add('btn-primary');
+        }
 
         function updatePlayerStats() {
-            const select = document.getElementById('player-select');
-            const playerId = select.value;
-            const container = document.getElementById('player-stats-container');
-            
-            if (!playerId) { container.style.display = 'none'; return; }
-            
-            const player = players[playerId];
-            document.getElementById('player-name').textContent = player.name;
-            document.getElementById('player-team').textContent = player.team;
-            document.getElementById('stat-ppg').textContent = player.ppg;
-            document.getElementById('stat-rpg').textContent = player.rpg;
-            document.getElementById('stat-apg').textContent = player.apg;
-            document.getElementById('stat-spg').textContent = player.spg;
-            document.getElementById('stat-bpg').textContent = player.bpg;
-            document.getElementById('stat-fg').textContent = player.fg + '%';
-            document.getElementById('player-info').textContent = player.info;
-            container.style.display = 'block';
+            // This would update stats based on selection
+            console.log('Stats updated');
         }
     </script>
 </body>
