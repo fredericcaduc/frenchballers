@@ -300,8 +300,8 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="container" style="display: flex; align-items: center; gap: 8px;">
-            <span style="font-size: 1.5rem; margin-right: 16px;">🏀</span>
+        <div class="container" style="display: flex; align-items: center; gap: 8px; overflow-x: auto;">
+            <span style="font-size: 1.5rem; margin-right: 16px; flex-shrink: 0;">🏀</span>
             <a href="#" onclick="showPage('home')" class="nav-link active">Accueil</a>
             <a href="#" onclick="showPage('performances')" class="nav-link">Performances</a>
             <a href="#" onclick="showPage('ranking')" class="nav-link">Power Ranking</a>
@@ -321,7 +321,7 @@
                 <div class="feature-card card-hover" onclick="showPage('performances')">
                     <div class="icon">📊</div>
                     <h3>Performances de la veille</h3>
-                    <p>Classement du moins au plus impressionnant</p>
+                    <p>Classement du meilleur au pire</p>
                     <a href="#">Consulter →</a>
                 </div>
                 <div class="feature-card card-hover" onclick="showPage('ranking')">
@@ -350,31 +350,54 @@
     <div id="performances" class="page">
         <div class="hero-header">
             <h1>📊 Performances de la veille</h1>
-            <p>Classement du moins au plus impressionnant</p>
+            <p>Classement du meilleur au pire</p>
         </div>
         <div class="container" style="padding-bottom: 60px;">
             <div id="performances-list">
-                <!-- Perf 1 - Basse -->
-                <div class="player-card average">
+                <!-- Perf 1 - Excellent -->
+                <div class="player-card excellent">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
                         <div>
-                            <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827;">Nolan Traoré</h3>
-                            <p style="color: #6b7280;">Brooklyn Nets</p>
+                            <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827;">Victor Wembanyama</h3>
+                            <p style="color: #6b7280;">San Antonio Spurs</p>
                         </div>
                         <div style="text-align: right;">
-                            <p style="font-size: 2.25rem; font-weight: bold; color: #111827;">6</p>
+                            <p style="font-size: 2.25rem; font-weight: bold; color: #10b981;">28</p>
                             <p style="font-size: 0.875rem; color: #6b7280;">points</p>
                         </div>
                     </div>
                     <div class="stats-grid">
-                        <div class="stat-box"><div class="label">REB</div><div class="value">2</div></div>
-                        <div class="stat-box"><div class="label">AST</div><div class="value">1</div></div>
-                        <div class="stat-box"><div class="label">STL</div><div class="value">0</div></div>
-                        <div class="stat-box"><div class="label">BLK</div><div class="value">0</div></div>
+                        <div class="stat-box"><div class="label">REB</div><div class="value" style="color: #10b981;">12</div></div>
+                        <div class="stat-box"><div class="label">AST</div><div class="value" style="color: #10b981;">5</div></div>
+                        <div class="stat-box"><div class="label">STL</div><div class="value" style="color: #10b981;">2</div></div>
+                        <div class="stat-box"><div class="label">BLK</div><div class="value" style="color: #10b981;">3</div></div>
+                    </div>
+                    <div style="margin-top: 16px; background: #d1fae5; border-left: 4px solid #10b981; padding: 12px; border-radius: 6px;">
+                        <p style="color: #065f46; font-weight: 600;">⭐ Performance Excellente!</p>
                     </div>
                 </div>
 
-                <!-- Perf 2 - Moyen -->
+                <!-- Perf 2 - Excellent -->
+                <div class="player-card excellent">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div>
+                            <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827;">Rudy Gobert</h3>
+                            <p style="color: #6b7280;">Minnesota Timberwolves</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <p style="font-size: 2.25rem; font-weight: bold; color: #10b981;">16</p>
+                            <p style="font-size: 0.875rem; color: #6b7280;">points</p>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><div class="label">REB</div><div class="value" style="color: #10b981;">11</div></div>
+                        <div class="stat-box"><div class="label">AST</div><div class="value">2</div></div>
+                        <div class="stat-box"><div class="label">STL</div><div class="value">1</div></div>
+                        <div class="stat-box"><div class="label">BLK</div><div class="value" style="color: #10b981;">4</div></div>
+                    </div>
+                </div>
+
+                <!-- Perf 3 - Bon -->
                 <div class="player-card good">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
                         <div>
@@ -394,46 +417,63 @@
                     </div>
                 </div>
 
-                <!-- Perf 3 - Excellent -->
-                <div class="player-card excellent">
+                <!-- Perf 4 - Bon -->
+                <div class="player-card good">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
                         <div>
-                            <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827;">Victor Wembanyama</h3>
-                            <p style="color: #6b7280;">San Antonio Spurs</p>
+                            <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827;">Alexandre Sarr</h3>
+                            <p style="color: #6b7280;">Washington Wizards</p>
                         </div>
                         <div style="text-align: right;">
-                            <p style="font-size: 2.25rem; font-weight: bold; color: #10b981;">28</p>
+                            <p style="font-size: 2.25rem; font-weight: bold; color: #f59e0b;">12</p>
                             <p style="font-size: 0.875rem; color: #6b7280;">points</p>
                         </div>
                     </div>
                     <div class="stats-grid">
-                        <div class="stat-box"><div class="label">REB</div><div class="value" style="color: #10b981;">12</div></div>
-                        <div class="stat-box"><div class="label">AST</div><div class="value" style="color: #10b981;">5</div></div>
-                        <div class="stat-box"><div class="label">STL</div><div class="value" style="color: #10b981;">2</div></div>
-                        <div class="stat-box"><div class="label">BLK</div><div class="value" style="color: #10b981;">3</div></div>
-                    </div>
-                    <div style="margin-top: 16px; background: #d1fae5; border-left: 4px solid #10b981; padding: 12px; border-radius: 6px;">
-                        <p style="color: #065f46; font-weight: 600;">⭐ Performance Impressionnante!</p>
+                        <div class="stat-box"><div class="label">REB</div><div class="value">8</div></div>
+                        <div class="stat-box"><div class="label">AST</div><div class="value">1</div></div>
+                        <div class="stat-box"><div class="label">STL</div><div class="value">1</div></div>
+                        <div class="stat-box"><div class="label">BLK</div><div class="value">2</div></div>
                     </div>
                 </div>
 
-                <!-- Perf 4 - Bon -->
-                <div class="player-card excellent">
+                <!-- Perf 5 - Moyen -->
+                <div class="player-card average">
                     <div style="display: flex; justify-content: space-between; align-items: start;">
                         <div>
-                            <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827;">Rudy Gobert</h3>
-                            <p style="color: #6b7280;">Minnesota Timberwolves</p>
+                            <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827;">Tidjane Salaün</h3>
+                            <p style="color: #6b7280;">Charlotte Hornets</p>
                         </div>
                         <div style="text-align: right;">
-                            <p style="font-size: 2.25rem; font-weight: bold; color: #10b981;">16</p>
+                            <p style="font-size: 2.25rem; font-weight: bold; color: #111827;">8</p>
                             <p style="font-size: 0.875rem; color: #6b7280;">points</p>
                         </div>
                     </div>
                     <div class="stats-grid">
-                        <div class="stat-box"><div class="label">REB</div><div class="value" style="color: #10b981;">11</div></div>
-                        <div class="stat-box"><div class="label">AST</div><div class="value">2</div></div>
+                        <div class="stat-box"><div class="label">REB</div><div class="value">4</div></div>
+                        <div class="stat-box"><div class="label">AST</div><div class="value">1</div></div>
                         <div class="stat-box"><div class="label">STL</div><div class="value">1</div></div>
-                        <div class="stat-box"><div class="label">BLK</div><div class="value" style="color: #10b981;">4</div></div>
+                        <div class="stat-box"><div class="label">BLK</div><div class="value">1</div></div>
+                    </div>
+                </div>
+
+                <!-- Perf 6 - Moyen -->
+                <div class="player-card average">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div>
+                            <h3 style="font-size: 1.25rem; font-weight: bold; color: #111827;">Nolan Traoré</h3>
+                            <p style="color: #6b7280;">Brooklyn Nets</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <p style="font-size: 2.25rem; font-weight: bold; color: #111827;">6</p>
+                            <p style="font-size: 0.875rem; color: #6b7280;">points</p>
+                        </div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-box"><div class="label">REB</div><div class="value">2</div></div>
+                        <div class="stat-box"><div class="label">AST</div><div class="value">1</div></div>
+                        <div class="stat-box"><div class="label">STL</div><div class="value">0</div></div>
+                        <div class="stat-box"><div class="label">BLK</div><div class="value">0</div></div>
                     </div>
                 </div>
             </div>
@@ -444,7 +484,7 @@
     <div id="ranking" class="page">
         <div class="hero-header">
             <h1>🏆 Power Ranking</h1>
-            <p>Classement des meilleurs joueurs français</p>
+            <p>Classement des meilleurs joueurs français (18 joueurs)</p>
         </div>
         <div class="container" style="padding-bottom: 60px;">
             <div style="margin-bottom: 40px; display: flex; gap: 16px;">
@@ -517,6 +557,175 @@
                         <p style="font-size: 0.875rem; color: #6b7280;">score</p>
                     </div>
                 </div>
+
+                <!-- Rank 6 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #e0e7ff; color: #4f46e5;">6</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Bilal Coulibaly</h3>
+                        <p style="color: #6b7280;">Washington Wizards</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">6.5</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 7 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #f3e8ff; color: #7c3aed;">7</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Tidjane Salaün</h3>
+                        <p style="color: #6b7280;">Charlotte Hornets</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">6.2</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 8 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #fce7f3; color: #be185d;">8</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Moussa Diabaté</h3>
+                        <p style="color: #6b7280;">Charlotte Hornets</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">6.0</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 9 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #fee2e2; color: #dc2626;">9</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Ousmane Dieng</h3>
+                        <p style="color: #6b7280;">Milwaukee Bucks</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">5.8</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 10 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #dbeafe; color: #0284c7;">10</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Rayan Rupert</h3>
+                        <p style="color: #6b7280;">Philadelphia 76ers</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">5.5</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 11 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #dcfce7; color: #16a34a;">11</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Pacôme Dadiet</h3>
+                        <p style="color: #6b7280;">New York Knicks</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">5.2</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 12 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #fef08a; color: #ca8a04;">12</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Noa Essengue</h3>
+                        <p style="color: #6b7280;">Chicago Bulls</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">5.0</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 13 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #f5d4d4; color: #991b1b;">13</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Mohamed Diawara</h3>
+                        <p style="color: #6b7280;">New York Knicks</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">4.8</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 14 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #f0fdf4; color: #166534;">14</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Joan Beringer</h3>
+                        <p style="color: #6b7280;">Minnesota Timberwolves</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">4.5</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 15 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #f0f9ff; color: #0c4a6e;">15</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Sidy Cissoko</h3>
+                        <p style="color: #6b7280;">Portland Trail Blazers</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">4.2</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 16 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #faf5ff; color: #5b21b6;">16</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Maxime Raynaud</h3>
+                        <p style="color: #6b7280;">Sacramento Kings</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">4.0</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 17 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #fef2f2; color: #7f1d1d;">17</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Noah Penda</h3>
+                        <p style="color: #6b7280;">Orlando Magic</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">3.8</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
+
+                <!-- Rank 18 -->
+                <div class="ranking-item card-hover">
+                    <div class="ranking-number" style="background: #faf5ff; color: #6b21a8;">18</div>
+                    <div style="flex: 1;">
+                        <h3 style="font-weight: bold; color: #111827; font-size: 1.125rem;">Nolan Traoré</h3>
+                        <p style="color: #6b7280;">Brooklyn Nets</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p style="font-size: 1.5rem; font-weight: bold; color: #111827;">3.5</p>
+                        <p style="font-size: 0.875rem; color: #6b7280;">score</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -578,7 +787,7 @@
 
             <div style="background: white; border-radius: 12px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
                 <h3 style="font-weight: bold; color: #111827; font-size: 1.25rem; margin-bottom: 16px;">Derniers matchs</h3>
-                <p style="color: #6b7280;">Données à jour au 2 septembre 2026</p>
+                <p style="color: #6b7280;">Données à jour au 3 septembre 2026</p>
             </div>
         </div>
     </div>
