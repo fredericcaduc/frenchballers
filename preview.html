@@ -13,14 +13,16 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background-color: #f9fafb;
+            font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #172033;
+            background-color: #f5f7fb;
         }
 
         /* Navigation */
         nav {
             background: white;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #e6eaf2;
+            box-shadow: 0 1px 2px rgba(23, 32, 51, 0.04);
             position: sticky;
             top: 0;
             z-index: 50;
@@ -29,22 +31,22 @@
         nav a {
             display: inline-block;
             padding: 12px 14px;
-            color: #6b7280;
-            font-weight: 500;
+            color: #526078;
+            font-weight: 600;
             font-size: 0.85rem;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: color 0.2s ease, background-color 0.2s ease;
             border-bottom: 3px solid transparent;
         }
 
         nav a:hover {
-            color: #667eea;
-            background-color: #f3f4f6;
+            color: #174ea6;
+            background-color: #f2f6fd;
         }
 
         nav a.active {
-            color: #667eea;
-            border-bottom-color: #667eea;
+            color: #174ea6;
+            border-bottom-color: #2563b9;
         }
 
         /* Pages */
@@ -59,11 +61,11 @@
 
         /* Hero Header */
         .hero-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #173f8a;
             color: white;
-            padding: 20px 16px;
+            padding: 24px 16px;
             text-align: center;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
         }
 
         .hero-header h1 {
@@ -79,22 +81,23 @@
 
         /* Cards */
         .card-hover {
-            transition: all 0.3s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
             cursor: pointer;
         }
 
         .card-hover:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.15);
+            box-shadow: 0 8px 20px rgba(23, 63, 138, 0.09);
         }
 
         .player-card {
             background: white;
-            border-radius: 8px;
-            padding: 14px;
-            margin-bottom: 10px;
-            border-left: 3px solid #667eea;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid #e4e8f0;
+            border-left: 3px solid #2563b9;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 6px rgba(23, 32, 51, 0.04);
         }
 
         .player-card.excellent {
@@ -102,59 +105,61 @@
         }
 
         .player-card.good {
-            border-left-color: #f59e0b;
+            border-left-color: #e58a23;
         }
 
         .player-card.average {
-            border-left-color: #6b7280;
+            border-left-color: #9aa5b8;
         }
 
         /* Stats Grid */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-            gap: 6px;
-            margin-top: 10px;
+            gap: 8px;
+            margin-top: 12px;
         }
 
         .stat-box {
-            background: #f3f4f6;
-            padding: 6px;
-            border-radius: 6px;
+            background: #f7f9fc;
+            border: 1px solid #edf0f5;
+            padding: 8px 6px;
+            border-radius: 8px;
             text-align: center;
         }
 
         .stat-box .label {
             font-size: 0.6rem;
-            color: #6b7280;
-            font-weight: 600;
+            color: #718096;
+            font-weight: 500;
             margin-bottom: 2px;
         }
 
         .stat-box .value {
-            font-size: 0.95rem;
-            font-weight: bold;
-            color: #111827;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #172033;
         }
 
         /* Ranking */
         .ranking-item {
             background: white;
-            border-radius: 8px;
-            padding: 12px;
+            border: 1px solid #e4e8f0;
+            border-radius: 10px;
+            padding: 14px;
             display: flex;
             align-items: center;
             gap: 10px;
             margin-bottom: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(23, 32, 51, 0.04);
         }
 
         .ranking-number {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #2563b9;
             color: white;
-            border-radius: 50%;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -164,17 +169,19 @@
         }
 
         .ranking-item.rank2 .ranking-number {
-            background: linear-gradient(135deg, #8b9cff 0%, #9bb5ff 100%);
+            background: #dce9fb;
+            color: #174ea6;
         }
 
         .ranking-item.rank3 .ranking-number {
-            background: linear-gradient(135deg, #c4b5fd 0%, #d8b4fe 100%);
+            background: #edf2fa;
+            color: #31527f;
         }
 
         /* Buttons */
         .btn {
             padding: 8px 12px;
-            border-radius: 6px;
+            border-radius: 8px;
             border: none;
             font-weight: 600;
             font-size: 0.8rem;
@@ -183,12 +190,12 @@
         }
 
         .btn-primary {
-            background: #667eea;
+            background: #2563b9;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #5568d3;
+            background: #174ea6;
         }
 
         .btn-secondary {
@@ -204,7 +211,7 @@
         select {
             padding: 8px 10px;
             border-radius: 6px;
-            border: 1px solid #d1d5db;
+            border: 1px solid #d9e0eb;
             font-size: 0.9rem;
             background: white;
             cursor: pointer;
@@ -214,27 +221,28 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 0 12px;
+            padding: 0 16px;
         }
 
         /* Home Cards Grid */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 12px;
-            padding: 16px 12px;
+            gap: 16px;
+            padding: 20px 16px;
         }
 
         .feature-card {
             background: white;
-            border-radius: 8px;
-            padding: 16px;
+            border: 1px solid #e4e8f0;
+            border-radius: 10px;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(23, 32, 51, 0.04);
         }
 
         .feature-card:hover {
-            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.15);
+            box-shadow: 0 8px 20px rgba(23, 63, 138, 0.09);
             transform: translateY(-2px);
         }
 
@@ -259,7 +267,7 @@
         .feature-card a {
             display: inline-block;
             padding: 6px 12px;
-            background: #667eea;
+            background: #2563b9;
             color: white;
             text-decoration: none;
             border-radius: 6px;
@@ -269,7 +277,7 @@
         }
 
         .feature-card a:hover {
-            background: #5568d3;
+            background: #174ea6;
         }
 
         /* Player info section */
@@ -305,6 +313,12 @@
         .player-info-right p:last-child {
             font-size: 0.7rem;
             color: #6b7280;
+        }
+
+        .ranking-item > div:last-child p {
+            font-size: 1.2rem !important;
+            font-weight: 800 !important;
+            color: #173f8a !important;
         }
 
         /* Responsive */
@@ -619,7 +633,7 @@
                 </div>
 
                 <div class="ranking-item card-hover">
-                    <div class="ranking-number" style="background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%); color: #3b82f6;">4</div>
+                    <div class="ranking-number" style="background: #dce9fb; color: #174ea6;">4</div>
                     <div style="flex: 1; min-width: 0;">
                         <h3 style="font-weight: bold; color: #111827; font-size: 0.85rem;">Alexandre Sarr</h3>
                         <p style="color: #6b7280; font-size: 0.7rem;">Washington Wizards</p>
@@ -630,7 +644,7 @@
                 </div>
 
                 <div class="ranking-item card-hover">
-                    <div class="ranking-number" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); color: #d97706;">5</div>
+                    <div class="ranking-number" style="background: #fff1d6; color: #b66a13;">5</div>
                     <div style="flex: 1; min-width: 0;">
                         <h3 style="font-weight: bold; color: #111827; font-size: 0.85rem;">Zacharie Risacher</h3>
                         <p style="color: #6b7280; font-size: 0.7rem;">Dallas Mavericks</p>
@@ -793,7 +807,7 @@
             <p>Victor Wembanyama</p>
         </div>
         <div class="container" style="padding-bottom: 20px;">
-            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px 20px; border-radius: 8px; text-align: center; margin-bottom: 14px;">
+            <div style="background: #173f8a; color: white; padding: 30px 20px; border-radius: 10px; text-align: center; margin-bottom: 14px;">
                 <h2 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 2px;">Victor Wembanyama</h2>
                 <p style="font-size: 0.75rem; opacity: 0.9;">San Antonio Spurs | #1 Pick 2023</p>
                 <p style="font-size: 2.5rem; font-weight: bold; margin-top: 8px; margin-bottom: 2px;">28</p>
@@ -801,25 +815,25 @@
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 14px;">
-                <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                <div style="background: white; border: 1px solid #e4e8f0; border-radius: 10px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(23,32,51,0.04);">
                     <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">REB</p>
                     <p style="font-size: 1.4rem; font-weight: bold; color: #111827;">12</p>
                 </div>
-                <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                <div style="background: white; border: 1px solid #e4e8f0; border-radius: 10px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(23,32,51,0.04);">
                     <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">AST</p>
                     <p style="font-size: 1.4rem; font-weight: bold; color: #111827;">5</p>
                 </div>
-                <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                <div style="background: white; border: 1px solid #e4e8f0; border-radius: 10px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(23,32,51,0.04);">
                     <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">STL</p>
                     <p style="font-size: 1.4rem; font-weight: bold; color: #111827;">2</p>
                 </div>
-                <div style="background: white; border-radius: 8px; padding: 12px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                <div style="background: white; border: 1px solid #e4e8f0; border-radius: 10px; padding: 12px; text-align: center; box-shadow: 0 2px 6px rgba(23,32,51,0.04);">
                     <p style="color: #6b7280; font-weight: 600; font-size: 0.7rem; margin-bottom: 4px;">BLK</p>
                     <p style="font-size: 1.4rem; font-weight: bold; color: #111827;">3</p>
                 </div>
             </div>
 
-            <div style="background: #eff6ff; border-left: 3px solid #667eea; border-radius: 8px; padding: 14px;">
+            <div style="background: #eff6ff; border-left: 3px solid #2563b9; border-radius: 10px; padding: 14px;">
                 <h3 style="font-weight: bold; color: #111827; font-size: 0.9rem; margin-bottom: 12px;">🔥 Saison</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 12px;">
                     <div>
@@ -857,7 +871,7 @@
                 </select>
             </div>
 
-            <div id="player-stats-detail" style="background: white; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+            <div id="player-stats-detail" style="background: white; border: 1px solid #e4e8f0; border-radius: 10px; padding: 16px; box-shadow: 0 2px 6px rgba(23,32,51,0.04);">
                 <h3 style="font-size: 0.9rem; font-weight: bold; color: #111827; margin-bottom: 12px;">Victor Wembanyama - San Antonio Spurs</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 8px;">
                     <div style="background: #f3f4f6; padding: 10px; border-radius: 6px; text-align: center;">
